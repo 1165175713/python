@@ -1,0 +1,36 @@
+python更换源
+• pip download -d path name  下载包和其所有依赖
+
+Python2 安装：
+python2 -m pip install XXX
+Python3 安装
+python3 -m pip install XXX
+这样就可以正常使用 pip 安装模块了
+来自 <https://www.cnblogs.com/yx12138/p/10667866.html> 
+
+pythonx get-pip.py
+pip3 install -r requirements.txt
+来自 <https://blog.csdn.net/shuaicenglou3032/article/details/123794496> 
+
+• pip install xxxxx --upgrade --ignore-installed   安装xxx库，排除不能卸载的情况
+• 16进制字符串转16进制：binascii.a2b_hex(hexstring)
+• range(0,len(xx),step)
+• 字节转数字：int.from_bytes(x,byteorder='big',signed=False)
+• 数字转字节：(1024).to_bytes(2,'big')
+• 将十六进制字符串写入二进制文件：
+with open('tmp1.wad','wb') as f:
+    strr=str1
+    strr.replace(" ","")
+    f.write(bytes.fromhex(strr))
+• str.rjust(width,'0')  数字补为固定长度的字符串
+• sys.exit() 终止python代码执行
+• eval函数将字符串变为表达式
+• list转bytes字符串:bytes(list)
+
+
+pyinstaller：
+	• 32位python生成32位exe；
+	• pyinstaller -F xxx.py  
+	• pyinstaller -F xxx.pyw 生成不弹框的exe
+	• pyinstaller --key xxxx -F xxxx.py 生成加密的exe，只能在64位下运行（需要tinyaes）
+
